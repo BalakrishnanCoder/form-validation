@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --box-shaddow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.32) 0px 2px 10px 0px;
+}
+body{
+    font-family: poppins, sans-serif;
+    background-color:  #c4ebe7;
+  
+    font-family: poppins, sans-serif;
+    height: 90vh;  
+    scroll-behavior: smooth;
+}
+.form-container{
+    width: 400px;
+    height: 95vh;
+    margin: 20px auto;
+    background-color: #f0f9fe;
+    box-shadow: var(--box-shaddow);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    margin-top: 20px;
+}
+.header h2{
+    text-align: center;
+}
+ .form{
+    width: 100%;
+    padding:  30px 40px;
+} 
+.form-control{
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    box-shadow: var(--box-shaddow);
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-control input:focus{
+    outline: none;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+
+}
+.form-control.success i.bxs-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.bx-error-circle{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form button{
+    background-color: blue;
+    border: none;
+    color: #f0f0f0;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
